@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minesweeper</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      margin: 0;
+      padding-top: 40px;
+      background-color: #f0f0f0;
+    }
+    h1{
+              color: #ffffff;
+              text-align: center;
+              font-size: 1.3cm;
+            }
+    #board {
+      margin-top: 20px;
+    }
+  
+    #status {
+      margin-top: 15px;
+      font-size: 1.2em;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border: none;
+      background-color: #4caf75;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .banner {
+     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(16, 56, 87, 0.9);
+    padding: 1px 340px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+    }
+    .banner button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4caf75;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    }
+    .banner button:hover {
+    background-color: #4556a0;
+    }
+  </style>
+</head>
+<body>
+  <h1> </h1>
+      <div class="banner">
+        <table width="100%">
+          <tr>
+            <td><h1>Minesweeper</h1></td>
+            <td><button onclick="location.href='Atestat.html'">Home</button>
+            <button onclick="location.href='joc.html'">Game</button></td>
+          </tr>
+        </table>
+      </div>
+  <div id="board"></div>
+  <p id="status"></p>
+  <script src="minesweeper.js"></script>
+  <button onclick="location.href='Atestat.html'">Back</button>
+</body>
+</html>

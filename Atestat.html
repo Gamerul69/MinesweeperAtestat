@@ -1,0 +1,188 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Minesweeper</title>
+        <link rel="icon" href="https://e7.pngegg.com/pngimages/726/613/png-clipart-minesweeper-go-classic-mines-game-cannon-shoot-game-fabulous-bubbles-android-game-angle.png" type="image/x-icon">
+        <style>
+            body {
+              font-family: Arial, sans-serif;
+              background: #103857;
+              background: linear-gradient(148deg, rgba(16, 56, 87, 1) 1%, rgba(75, 85, 180, 1) 48%, rgba(237, 83, 98, 1) 100%);
+              padding: 20px;
+              line-height: 1.6;
+            }
+            h1{
+              color: #ffffff;
+              text-align: center;
+              font-size: 1.3cm;
+            }
+            p {text-indent: 50px;
+            font-size: 0.59cm;}
+            li {font-size: 0.59cm;}
+            h2 {
+              color: #333;
+              font-size: 1cm;
+            }
+            .section {
+              background-color: white;
+              padding: 15px;
+              margin-bottom: 20px;
+              border-radius: 8px;
+              box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }
+            .coloane {
+              background-color: white;
+              padding: 15px;
+              margin-bottom: 20px;
+              border-radius: 8px;
+              box-shadow: 0 0 10px rgba(0,0,0,0.1);
+              display: flex;
+              gap: 20px;
+            }
+            .col1, .col2 {
+             flex: 1;
+            }
+            button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border: none;
+            background-color: #4caf75;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+            }
+            button:hover {
+            background-color: #45a049;
+            }
+            .banner {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(16, 56, 87, 0.9);
+            padding: 1px 400px;
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+            }
+            .banner button {
+              padding: 10px 20px;
+              font-size: 1rem;
+              background-color: #4caf75;
+              color: white;
+              border: none;
+              border-radius: 6px;
+              cursor: pointer;
+            }
+
+            .banner button:hover {
+              background-color: #4556a0;
+            }
+          </style>
+        </head>
+        <body>
+          <h1> </h1>
+            <div class="banner">
+              <table width="100%">
+                <tr>
+                <td><h1>Minesweeper</h1></td>
+                <td><button onclick="location.href='Atestat.html'">Home</button>
+                <button onclick="location.href='joc.html'">Game</button></td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="section">
+              <h2>What is Minesweeper?</h2>
+              <p>Minesweeper is a logic-based puzzle game where the goal is to clear a board without detonating any hidden mines. Each tile gives you clues about how many mines are nearby.</p>
+            </div>
+          
+            <div class="section">
+              <h2>History</h2>
+              <p>Minesweeper has its roots in early logic-based computer games from the 1960s and 1970s, inspired by classic pen-and-paper puzzles. One of the first digital versions was “Mined-Out” (1983) for the ZX Spectrum. These early games featured similar mechanics: uncover cells while avoiding hidden mines.
+
+                The game became globally popular when Microsoft included it in Windows 3.1 in 1992, as a way to help users practice right-clicking with a mouse. This version, developed by Robert Donner and Curt Johnson, featured a clean interface, a timer, and three difficulty levels.
+                
+                Despite its simplicity, Minesweeper became iconic—known for its blend of logic, strategy, and risk. Over the years, it evolved with new versions, including 3D variants and competitive speedrunning. Today, it remains a classic puzzle game, celebrated for its timeless challenge and nostalgic value.</p>
+            </div>
+          
+            <div class="coloane">
+              <div class="col1">
+              <h2>How to Play</h2>
+              <ul>
+                <br><br>
+                <li>Click squares to reveal them.</li>
+                <li>Numbers show how many mines are around that tile (corners included).</li>
+                <li>Right-click to flag a square you think contains a mine.</li>
+                <li>Reveal all safe tiles to win the game.</li>
+                <li>If you click a mine, the game is over.</li>
+              </ul>
+              </div>
+              <div class="col2">
+                <li>Trial and error is the best teacher, so give it a try:</li>
+                <button onclick="location.href='joc.html'">Play!</button>
+              </div>
+            </div>
+          
+            <div class="section">
+              <h2>Tips for Winning</h2>
+              <ul>
+                <li>Start from a corner or edge—this often opens up more space.</li>
+                <li>Use numbers and logic to deduce where mines are located.</li>
+                <li>Mark suspected mines with flags, but don’t guess unless you must.</li>
+                <li>Look for common patterns such as "1-2-1" or "1-1" combinations.</li>
+                <li>Use both left and right click together to quickly reveal safe zones.</li>
+              </ul>
+            </div>
+          
+            <div class="section">
+              <h2>Game Modes</h2>
+              <ul>
+                <li><strong>Beginner:</strong> 9x9 grid with 10 mines</li>
+                <li><strong>Intermediate:</strong> 16x16 grid with 40 mines</li>
+                <li><strong>Expert:</strong> 30x16 grid with 99 mines</li>
+              </ul>
+            </div>
+          
+            <div class="section">
+              <h2>Strategy & Logic</h2>
+              <p>Good players learn to recognize patterns and make logical deductions. Minesweeper is not only about luck—it rewards clear thinking and practice. Late-game often requires taking risks based on probability.</p>
+            </div>
+          
+            <div class="section">
+              <h2>Fun Facts</h2>
+              <ul>
+                <li>The world record for Expert mode is under 30 seconds.</li>
+                <li>Minesweeper was designed partly to help people learn to use the mouse.</li>
+                <li>There are competitive Minesweeper tournaments and communities online.</li>
+                <li>Advanced players can clear boards almost automatically by spotting patterns.</li>
+              </ul>
+            </div>
+          
+            <div class="section">
+              <h2>Variations</h2>
+              <ul>
+                <li>Hexagonal Minesweeper: Uses hex tiles instead of squares.</li>
+                    <img src="https://cms-assets.tutsplus.com/cdn-cgi/image/width=850/uploads/users/1605/posts/28655/final_image/hexmine-phaser-finished.png" alt="Hexagoanl Minesweeper" height="300">
+                <li>3D Minesweeper: Adds another dimension for extra difficulty.</li>
+                    <img src="https://eelis.net/Minesweeper3D/screenshot-cube.png" alt="3D Minesweeper" height="300">
+                <li>Timed mode: Clear the board as fast as possible.</li>
+                <li>Online multiplayer versions with leaderboards.</li>
+              </ul>
+            </div>
+
+            <div class="section">
+              <h2>Other sites on this topic</h2>
+              <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Minesweeper_(video_game)" target="_blank">Wikipedia - Minesweeper (video game)</a></li>
+                <li><a href="https://www.minesweeper.info/wiki/Main_Page" target="_blank">Minesweeper.info - World of Minesweeper</a></li>
+                <li><a href="https://support.microsoft.com/en-us/windows/play-classic-minesweeper-in-windows-10-90df21e6-5672-2c56-93a7-1a186c9a1f5b" target="_blank">Microsoft Support - Play Minesweeper</a></li>
+                <li><a href="https://www.ign.com/articles/2019/07/09/minesweeper-the-history-of-the-worlds-most-viral-game" target="_blank">IGN - Minesweeper History and Evolution</a></li>
+                <li><a href="https://computerhistory.org/" target="_blank">Computer History Museum - Evolution of Computer Games</a></li>
+              </ul>
+            </div>
+          </body>
+          </html>
